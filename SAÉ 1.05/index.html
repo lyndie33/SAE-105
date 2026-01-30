@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MA PASSION : REGARDER DES SÉRIES</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- popup image -->
+<!-- popup -->
+<div class="popup popup-invisible">
+    <div class="popup-content">
+
+        <p class="cache-fenetre">fermer</p>
+
+        <img src="" alt="image série" id="popup-image">
+
+        <div class="popup-text">
+            <h3 id="popup-title"></h3>
+
+            <p id="popup-resume"></p>
+
+            <p id="popup-like"></p>
+        </div>
+
+    </div>
+</div>
+<!-- popup -->
+
+<!-- popup image -->
+
+<header>
+    <h1>Ma passion : les séries</h1>
+</header>
+
+<!-- bannière -->
+<div class="affiche"></div>
+
+<!-- pourquoi j'aime les séries -->
+<section class="why-series">
+    <h2>Pourquoi j’aime les séries</h2>
+    <p>
+       L'une de mes passions c'est de regarder des séries car c'est un moment qui me permet de me détendre, de ne plus penser à la vie réelle, de m'évader dans des univers complètement différents. Chaque épisode est une nouvelle occasion de vivre des émotions fortes, de m’attacher aux personnages et de me laisser emporter par l’histoire. 
+    </p>
+
+    <p>
+      Les genres qui me plaisent tout particulièrement sont les séries d'action et les séries de romance.  
+    </p>
+</section>
+<!-- pourquoi j'aime les séries -->
+
+
+<!-- séries -->
+<section class="series">
+    <h1>Mes séries préférées</h1>
+    <p>Voici trois séries que j’aime beaucoup (clic sur l'affiche du film)</p>
+        
+
+    <div class="series-list">
+        <div class="box">
+            <img src="IMG/alice.webp" class="image-cliquable" alt="alice in borderland"
+            data-title="Alice in Borderland"
+            data-resume="Alice in Borderland raconte l’histoire d’Arisu, un jeune homme qui se retrouve dans un Tokyo parallèle où il doit participer à des jeux mortels pour survivre. Chaque épreuve est dangereuse, et il rencontre plusieurs personnages, certains qui vont l’aider, d’autres qui cherchent à le manipuler. L’histoire explore la survie, la confiance et les alliances dans des situations extrêmes."
+             data-like="Alice in Borderland est de loin ma série préférée. L’histoire est tellement riche et les jeux sont tellement complexes. J’ai adoré la tension constante dans chaque épisode et le suspense qui ne baisse jamais. Les personnages sont tous intéressants et ont chacun leur propre histoire et couleurs. J’ai été particulièrement surprise par les rebondissements et les plot twist. L’univers est tellement immersif et captivant  que tu ne peux qu'être transporté. Ce que j’ai aimé aussi, c’est la manière dont la série explore les choix et la psychologie des personnages, leur moralité et la manière dont ils font face à des situations où chaque décision peut être une question de vie ou de mort.">
+        <h3>Alice in Borderland</h3>
+        </div>
+        
+
+        <div class="box">
+            <img src="IMG/The_Queen's_Gambit_(miniseries).png" class="image-cliquable" alt="Le jeu de la dame"
+            data-title="Le jeu de la Dame"
+            data-resume="La série suit Beth Harmon, une jeune prodige des échecs, qui doit surmonter ses problèmes personnels et ses addictions tout en participant à des compétitions importantes. On découvre sa façon de réfléchir, de prendre des décisions et d’affronter les défis, aussi bien sur l’échiquier que dans sa vie quotidienne"
+            data-like="Je n'étais pas partculièrement interessée par le monde des échecs au départ, je ne conaissait même pas toutes les règles, et même si après avoir regarder la série je ne m'y connais toujours pas bien dans ce domaine, la série a réussi à m'accrocher et à rendre cet univers intéressant. Les parties sont présentées de manière captivante, et l’atmosphère de la série est agréable à suivre. J’ai aimé observer la progression de Beth et la façon dont elle apprend à gérer ses difficultés personnelles tout en poursuivant sa passion.">
+
+            <h3>Le jeu de la dame</h3>
+        </div>
+
+        <div class="box">
+            <img src="IMG/sieun2.jpg" class="image-cliquable" alt="Weak Hero Class 1"
+            data-title="Weak Hero Class 1"
+           data-resume="Dans cette série on suit l'histoire de Si-eun, un élève physiquement faible mais très intelligent qui décide de protéger ses camarades contre les intimidateurs du lycée. Il utilise sa stratégie et son intelligence pour se défendre et affronter des situations violentes, tout en construisant des liens d’amitié et de loyauté avec d’autres élèves"
+            data-like="J’aime beaucoup les séries d’action, et celle-ci est, je trouve, superbe car les scènes de combat sont particulièrement intéressantes et excitantes. Tout dans cette série m’a plu : le jeu des acteurs, l’histoire et la manière dont tout a été réalisé. J’ai aimé suivre Sie-ei, le personnage principal et voir comment il utilise sa stratégie et son intelligence pour affronter des situations dangereuses, alors qu’il n’a pas la force physique pour se défendre directement. J'ai aussi beaucoup aimé comment la série présente l’amitié entre es personnages principaux Suho, Sieun et Beomsok et comment leur relation va évoluer et basculer au cours de la série">
+            <h3>Weak Hero Class 1</h3>
+        </div>
+    </div>
+</section>
+
+<!-- formulaire -->
+<section>
+<form id="formulaire-serie" class="formuser">
+    <h2 class="titleform">Ajoute ta série préférée !</h2>
+
+    <fieldset>
+        <p class="txt-required">* Champs obligatoires</p>
+
+        <label for="titre">Nom de la série *</label><br>
+        <input type="text" id="titre" required><br><br>
+
+        <label for="description">Description *</label><br>
+        <textarea id="description" rows="4" maxlength="200" required></textarea><br><br>
+
+        <label for="email">Votre email *</label><br>
+        <input type="email" id="email" required><br><br>
+
+        <label for="image-serie">Lien de l’image de la série *</label><br>
+        <input type="url" id="image-serie" placeholder="https://..." required><br><br>
+
+
+        <input type="button" id="button" value="Envoyer">
+    </fieldset>
+</form>
+</section>
+
+<!-- prévisualisation -->
+    <div id="backprevisu">
+    <h2 class="prevititle">Ta série</h2>
+
+    <div class="backserieuser">
+        <img id="imageuser" src="" alt="Image de la série">
+        <p id="titleuser"></p>
+        <p id="descriptionuser"></p>
+    </div>
+</div>
+
+</div>
+
+<footer id="footer">
+    <p>Site réalisé par UNG Lyndie</p><br>
+    <p>Mention légal</p><br>
+    <p>ément aux dispositions de la loi n° 2004-575 du 21 juin 2004 pour la confiance en l'économie numérique, il est précisé aux utilisateurs du site Nom du site l'identité des différents intervenants dans le cadre de sa réalisation et de son suivi.</p><br>
+
+    <p>Edition du site :</p><br>
+
+    <p>Le présent site, accessible à l'URL ung.projetsmmichamps.fr/, est édité par: Lyndie UNG, de nationalité Française (France), lyndieung@gmail.com</p></br>
+
+    <p>Hébergement :</p><br>
+
+    <p>Le Site est hébergé par la société O2Switch, situé 222 Boulevard Gustave Flaubert, 63000 Clermont-Ferrand, (contact téléphonique ou email : (+33) 4 44 44 60 40). Directeur de publication Le Directeur de la publication du Site est UNG Lyndie . Me contacter Par email: lyndie.ung@gmail.com
+    </p><br>
+    <p>
+    Image : Droits d'auteur © 
+    <a href="http://www.redbubble.com/es/people/kaise" target="_blank" class="lien-auteur">
+        Kaiser – redbubble
+        
+    </a>
+ 
+
+</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
